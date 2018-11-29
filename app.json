@@ -1,0 +1,7 @@
+{
+    "name": "Team Arrow Website",
+    "description": "Website for KadHack 2018 by Team Arrow",
+    "repository": "https://github.com/okibeogezi/teamarrow",
+    "keywords": ["Nodejs"],
+    "image": "heroku/nodejs"
+}

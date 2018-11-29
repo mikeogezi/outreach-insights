@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Wellfleet';
+    src: url(../fonts/Wellfleet-Regular.ttf);
+}
+
+body {
+    font-family: Arial;
+    background-size: contain;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+body {
+    background-image: url(../images/bg_2.jpg) !important;
+}
+
+body > .container {
+    box-shadow: 0 0 30px black;
+    padding: 0 15px 0 15px;
+}
+
+.tile {
+    height: 33% !important;
+    max-height: 33% !important;
+}
+
+.tile:hover {
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/material_icons.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.carousel.carousel-slider.initialized {
+    min-height: 100%;
+}
+
+.row.tiles div[class^="col"], div[class*=" col"] {
+    padding: 0;
+}
+
+.row.tiles {
+    margin-bottom: 0 !important;
+}

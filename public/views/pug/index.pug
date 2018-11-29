@@ -1,0 +1,184 @@
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/materialize.css')
+    meta(charset='UTF-8')
+    script(type='text/javascript', src='js/jquery.js')
+    script(type='text/javascript', src='js/materialize.js')
+    script(type='text/javascript', src='js/app.js')
+  body
+    #map
+    .container.info-panel
+        .row
+          .greatly-reduced-padding
+            .card.info-panel
+                .card-content
+                    table
+                        tbody
+                            .card.wind.trans
+                                  .card-content.trans
+                                        .key.bolder
+                                            i.material-icons.default tune
+                                            span Location selection
+                                  br
+                                  .card-content.body
+                                        .row
+                                            .col.s12
+                                                div
+                                                    p.input-field.col.s12
+                                                      select#state-select
+                                                        include state-options
+                                                      label: b Select a State
+                                        .row
+                                            .col.s12
+                                                div
+                                                    p.input-field.col.s12
+                                                      select#lga-select
+                                                        include kaduna-lga-options
+                                                      label: b Select an LGA
+                                        .row
+                                            .col.s12
+                                                div
+                                                    p.input-field.col.s12
+                                                      input#settlement-search.autocomplete(type="text" disabled)
+                                                      label(for="settlement-search"): b Search for a Settlement
+                                        .row
+                                            .col.s12
+                                                .key
+                                                    a.bolder.waves-effect.waves-dark.btn.teal.right#search-btn
+                                                        i.material-icons.right.small arrow_forward
+                                                        | Go
+                            .hide.card.wind.trans(style='padding-top: 2px;')
+                                  .card-content.trans
+                                        .key.bolder
+                                            i.material-icons.default info
+                                            span Location information
+                        tr
+                            td.key
+                                i.material-icons.left people                       
+                                | Population
+                            td.value.right
+                                #population -
+                        tr
+                            td.key
+                                i.material-icons.left local_hospital
+                                | Doctors Per 100,000
+                            td.value.right
+                                #doctors-per-100k -
+                        tr
+                            td.key
+                                i.material-icons.left transfer_within_a_station 
+                                | Closest Health Facilities
+                            td.value#closest-health-facilities
+                                button.waves-effect.waves-dark.btn.purple.right.modal-trigger#closest-health-facilities-btn(data-target='closest')
+                                    i.material-icons open_in_new
+                                    //- | Open
+                        tr
+                            td.key 
+                                i.material-icons.left directions_walk 
+                                | Neighboring Settlements
+                            td.value#neighboring-settlements
+                                button.waves-effect.waves-dark.btn.blue.right.modal-trigger#neighboring-settlements-btn(data-target='neighboring')
+                                    i.material-icons open_in_new
+                                    //- | Open
+    .container.suggestion-panel
+        .row
+          .reduced-padding
+            .card.suggestion-panel
+                .card-content
+                    button.waves-effect.waves-dark.amber.darken-3.btn.modal-trigger(data-target='recs-modal') View Insights
+                        i.material-icons.left(style='font-size: 1.75rem !important;') lightbulb_outline
+                    
+                    #closest.modal.modal-fixed-footer
+                        .modal-content
+                            h4 Closest Health Facilities
+                                i.material-icons.left transfer_within_a_station
+                            table
+                                thead
+                                    tr
+                                        td.key Health Facility
+                                        td.key Distance
+                                        td.key Remarks
+                                tbody
+                                    tr
+                                        td Gwantu L'urlo Primary Health Center
+                                        td 1.6 Kilometres
+                                        td This hospital is poorly staffed and has antiquated tools. As a reault of this, it lacks the capacity to handle many patients or the more serious cases of injury appropriately.
+                                    tr
+                                        td Giwaye Health Clinic
+                                        td 1.9 Kilometres
+                                        td -
+                                    tr
+                                        td Malam Iyal Memorial Primary Health Center Kwarbai
+                                        td 3.8 Kilometres
+                                        td The hospital has antiquated equipment and a shortage of qualified doctors.
+                                    tr
+                                        td Gurbabiya Primary Health Center
+                                        td 5.4 Kilometres
+                                        td This is the best hospital in a 10 Kilometre radius but it is also the furthest from the community, meaning that in an emergency situation it would take a patient a significant amount of time to reach it.
+                        .modal-footer.semi-trans
+                            a.modal-action.modal-close.waves-effect.waves-dark.btn-flat.blue.white-text(href='#'): b Ok
+                    
+                    #neighboring.modal.modal-fixed-footer
+                        .modal-content
+                            h4 Neighboring Settlements
+                                i.material-icons.left directions_walk
+                            table
+                                thead
+                                    tr
+                                        td.key Settlements
+                                        td.key#distance-from Distance from queried settlement
+                                tbody
+                                    tr
+                                        td Badole
+                                        td 400 Metres
+                                    tr
+                                        td Gwantu
+                                        td 600 Metres
+                                    tr
+                                        td Jega
+                                        td 900 Metres
+                                    tr
+                                        td Makera
+                                        td 1.4 Kilometres
+                                    tr
+                                        td Gidan Zari
+                                        td 2.5 Kilometres
+
+                        .modal-footer.semi-trans
+                            a.modal-action.modal-close.waves-effect.waves-dark.btn-flat.blue.white-text(href='#'): b Ok
+                    
+                    #recs-modal.modal.modal-fixed-footer
+                        .modal-content
+                            h4 Insights
+                                i.material-icons.left lightbulb_outline
+                            table
+                                thead
+                                    tr
+                                        td.key(style='color: #222; font-size: 18px;'): b The Good News
+                                            i.material-icons.left(style='font-size: 1.5rem;') thumb_up
+                                tbody
+                                    tr
+                                        td This community has seen a marked improvement in health awareness as people are being better educated about how to lead healthy and safe lives
+                                    tr
+                                        td 98% immunization rate
+                            table
+                                thead
+                                    tr
+                                        td.key(style='color: #222;; font-size: 18px;'): b The Challenges
+                                            i.material-icons.left(style='font-size: 1.5rem;') sentiment_very_dissatisfied
+                                tbody
+                                    tr
+                                        td Most of the hospitals and health centres in this area are poorly staffed and ill equipped.
+                                    tr
+                                        td The community suffers from poor supply of clean water and sewage.
+                                    
+
+                        .modal-footer.semi-trans
+                            a.left.modal-action.modal-close.waves-effect.waves-dark.btn.teal(href='#', onclick="M.toast({ html: 'Saved insights for later', classes: 'rounded' })") Save for later
+                                i.material-icons.right save
+                            a.modal-action.modal-close.waves-effect.waves-dark.btn-flat.blue.white-text(href='#'): b Ok
+
+
+    script(async, defer, src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD7xFbJB99jG3BMQIFJy1mN4kcuxMMlcyU&callback=initMap')

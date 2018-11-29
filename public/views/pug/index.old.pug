@@ -1,0 +1,157 @@
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/materialize.css')
+    meta(charset='UTF-8')
+    script(type='text/javascript', src='js/jquery.js')
+    script(type='text/javascript', src='js/materialize.js')
+    script(type='text/javascript', src='js/app.js')
+  body
+    #map
+    .container.info-panel
+        .row
+            .card.info-panel
+                .card-content
+                    table
+                        tbody
+                            tr
+                                .card.wind.trans
+                                  .card-content.trans
+                                      p.key
+                                        img.icon(src='images/wind.svg')
+                                        | Wind
+                                  .card-content.body
+                                      .row
+                                          .col.s6
+                                              .key
+                                                   img.icon(src='images/wind-direction.svg')
+                                                   | Direction
+                                              #wind-direction.c-align -
+                                          .col.s6
+                                              .key
+                                                   img.icon(src='images/wind-intensity.svg')
+                                                   | Intensity
+                                              #wind-intensity.c-align -
+
+                            tr
+                                td.key
+                                    img.icon(src='images/rain.svg')
+                                    | Rainfall
+                                td.value#rainfall -
+                            tr
+                                td.key
+                                    img.icon(src='images/humidity.svg')
+                                    | Humidity
+                                td.value#humidity -
+                            tr
+                                td.key
+                                    img.icon(src='images/vegetation.svg')
+                                    | Vegetation
+                                td.value#vegetation -
+                            tr
+                                td.key
+                                    img.icon(src='images/water.svg')
+                                    | Water Body
+                                td.value#water-body -
+                            tr
+                                td.key
+                                    img.icon(src='images/temperature.svg')
+                                    | Temperature
+                                td.value#temperature -
+    .container.suggestion-panel
+        .row
+            .card.suggestion-panel
+                .card-content
+                    button.waves-effect.waves-dark.blue.btn(data-target='recs-modal') Recommendation
+                        i.material-icons.left new_releases
+                    button.waves-effect.waves-dark.blue.btn(data-target='info-modal') Get Information
+                        i.material-icons.left info
+                    #info-modal.modal.modal-fixed-footer
+                        .modal-content
+                            h4 Get Information
+
+                            p 1. CONTROL LINE
+                            small One of the most important components of wildfire suppression, control lines are simply the boundaries—natural or manmade—that firefighters employ to control how and where a fire spreads. A rocky ridge or river can serve as a natural control line, or firefighters can establish a manmade one by, for example, clearing out an extended line of brush. The application of flame retardants to such a boundary changes it from a control line to what's called a fireline.
+                            br
+
+                            p 2. BURNING OUT
+                            small When establishing control lines, digging a small ditch and pulling up some plants isn't always enough. To create a sturdy, fuel-free barrier, firefighters may use small torches to purposefully burn the brush just inside a control line. A burnout is one of several ways to bolster a control line and further prevent a blaze from escaping the established boundaries.
+                            br
+
+                            p 3. BACKBURN
+                            small A backburn is similar to a burnout, but requires a slightly more sophisticated technique. Once a control line is established, firefighters may set a controlled blaze downwind of the main fire, just on the inside of the control line. Firefighters then push the new blaze back toward the main fire, burning up all the fuel that lies between the fire and the control line.
+                            br
+
+                            p 4. FLANKING
+                            small For a wildfire small enough to be snuffed out using a direct attack, firefighters may begin their assault on the blaze from behind. Starting from already burned earth, the firefighters will typically work their way around the edge of the fire from the right. Using hoses, the firemen will spray the flames as they work their way around the entire perimeter of the blaze.
+                            br
+
+                            p 5. HOT SPOTTING
+                            small Hot spotting is the term used to describe the extra attention given to the most active and dangerous portions of a wildfire. The crew(s) fighting the fire size up the parts of the blaze most likely to spread and try to devise the best strategy for keeping these areas in check. Hot spotting may also involve diverting extra manpower to the task of stamping out embers and spot fires that blow or erupt from the hottest part of the fire.
+                            br
+
+                            p 6. KNOCK DOWN
+                            small Whereas hot spotting refers to the assessment of a fire's condition, knocking down is all about action. The knock down strategy is employed when firefighters decide that a certain hotspot needs to be suppressed immediately. To diminish the section of a fire deemed to have grown too hot, too active, or too large, fighters directly apply some combination of dirt, water, or retardant to that section of the fire.
+                            br
+
+                            p 7. COLD TRAILING
+                            small While a fire is being attacked from the front or side, other firefighters may be involved in cold trailing, the task of combing through already scorched ground in the wake of a moving wildfire. The point is to make sure no hot or glowing embers remain, as leftover coals can be blown around and flame up again.
+                            br
+
+                            p 8. AERIAL ATTACK
+                            small If significant exposed water sources are nearby, planes and helicopters can scoop up buckets of water and carry them to be dropped atop the blaze. The water is often mixed with a foam applicant before being dropped. The foamed water acts as a more effective barrier to the spread of fire and also insulates fuel that has not yet burned.
+                            br
+
+                            p 9. FIRELINE EXPLOSIVES
+                            small When setting control lines or firelines, firefighters may even use explosives to break up dense brush and hard soil. Explosives can also be used to fell trees whose spread might help a fire jump across a control line. During a large or fast-moving fire, explosives are employed mainly for efficiency purposes, as they can save precious time when firefighters need to contain a fire quickly.
+                            br
+
+                            p 10. MOP-UP
+                            small It's called mop-up when firefighters go back and clean up along a completed control line. Mop-up consists of dousing any embers and spot fires that have made their way across control lines. It also involves protecting still-vulnerable fuels using a burnout (if they're permanently situated) or by simply moving them out of the way of the fire.
+                            br
+                        .modal-footer.semi-trans
+                            a.modal-action.modal-close.waves-effect.waves-green.btn.red(href='#!') Cancel
+                            a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Ok
+                    #recs-modal.modal.modal-fixed-footer
+                        .modal-content
+                            h4 Recommendation
+                            table
+                                thead
+                                    tr
+                                        td.key Parameter
+                                        td.key Inference
+                                tbody
+                                    tr
+                                        td Rainfall
+                                        td Low
+                                    tr
+                                        td Humidity
+                                        td Medium
+                                    tr
+                                        td Vegetation
+                                        td To the west
+                                    tr
+                                        td Water Body
+                                        td None
+                                    tr
+                                        td Temperature
+                                        td Low
+                            br
+
+                            table
+                                thead
+                                    tr
+                                        td.key Challenges
+                                tbody
+                                    tr
+                                        td - Need for sufficient water before coming to fire site
+                                    tr
+                                        td - Need to set up a control line towards the direction of the wind
+
+                        .modal-footer.semi-trans
+                            a.modal-action.modal-close.waves-effect.waves-green.btn.red(href='#!') Cancel
+                            a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href='#!') Ok
+
+
+    script(async, defer, src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD7xFbJB99jG3BMQIFJy1mN4kcuxMMlcyU&callback=initMap')

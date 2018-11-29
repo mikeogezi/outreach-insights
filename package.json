@@ -1,0 +1,32 @@
+{
+  "name": "teamarrow",
+  "version": "1.0.0",
+  "description": "Geospatial healthcare analysis platform",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=development node_modules/.bin/nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "cookie-parser": "1.4.3",
+    "express": "4.14.0",
+    "nib": "1.1.2",
+    "nodemailer": "2.7.0",
+    "pug": "2.0.0-beta6",
+    "serve-favicon": "2.3.2",
+    "stylus": "0.54.5",
+    "multer": "1.2.1",
+    "ms": "0.7.1",
+    "nodemon": "^1.18.7"
+  },
+  "keywords": [
+    "Health",
+    "Hackathon",
+    "Machine Learning"
+  ],
+  "author": "Michael Ogezi",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}

@@ -1,0 +1,185 @@
+#map {
+    height: 100%;
+    width: 100%;
+    /* background: url(../images/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+#population {
+    margin-left: -100px;
+}
+
+#doctors-per-100k, #population {
+    padding-right: 12px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-content p {
+    font-weight: bolder;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.modal-content small {
+    font-size: 14px;
+}
+
+#search-btn {
+    margin-top: -10px;
+}
+
+#search-btn i {
+    font-size: 1.5rem !important;
+}
+
+.greatly-reduced-padding .card {
+    margin: 0px !important;
+}
+
+.greatly-reduced-padding .card .card-content {
+    padding: 1px !important;
+}
+
+.reduced-padding .card .card-content {
+    padding: 8px !important;
+}
+
+.key span {
+    font-size: 16px;
+    position: relative;
+    bottom: 7px;
+}
+
+.key small {
+    position: relative;
+    margin-left: 100px;
+}
+
+.key, .value, .card-content {
+    color: #555;
+}
+
+#recs-modal, #info-modal {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#wind-direction, #wind-intensity {}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: -10px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.btn, .btn-flat {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+.container.info-panel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+}
+
+.c-align {
+    padding-left: 40px;
+    padding-right: 0px;
+}
+
+.suggestion-panel .row {
+    margin-bottom: 0;
+}
+
+.suggestion-panel .btn {
+    margin-right: 2px !important;
+    margin-left: 2px !important;
+}
+
+.container.suggestion-panel {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: auto;
+    margin: 0;
+}
+
+i.default {
+    font-size: 2rem;
+    padding: 8px;
+}
+
+.card.info-panel, .card.suggestion-panel {
+    background-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.trans {
+    background-color: rgba(255, 255, 255, 0.35) !important;
+    padding: 0;
+}
+
+.modal-content h4 i.material-icons {
+    font-size: 2.5rem !important;
+}
+
+.semi-trans {
+    background-color: rgba(255, 255, 255, 0.55) !important;
+}
+
+.key {
+    font-weight: 400 !important;
+}
+
+.bolder {
+    font-weight: bold !important;
+}
+
+.key-small {
+    font-weight: bold;
+}
+
+.value {
+    font-weight: normal;
+}
+
+body {
+    background-color: #eee;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/material_icons.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
