@@ -10,9 +10,11 @@ Our solution makes use of datasets and APIs from Grid3 Nigeria, Google, and Wiki
 The application demo is available here https://teamarrowkadhack2018.herokuapp.com/
 
 To run the application locally, simply clone the repository, cd into it then start the nodejs server.
-```git clone https://github.com/okibeogezi/teamarrow.git```
-```cd teamarrow```
-```npm start```
+```bash
+git clone https://github.com/okibeogezi/teamarrow.git
+cd teamarrow
+npm start
+```
 
 The server will start running on port 3000, Go to your browser and visit http://localhost:3000
 
