@@ -1,4 +1,4 @@
-# [Outreach Insights](https://devpost.com/software/teamarrow) by Team Arrow [KadHack 2018](http://colab.com.ng/2018/11/09/win-n1000000-kadhack2018-ehealth-colab-grid3/)
+# [Outreach Insights](https://devpost.com/software/teamarrow) by Team Arrow for [KadHack 2018](http://colab.com.ng/2018/11/09/win-n1000000-kadhack2018-ehealth-colab-grid3/)
 
 Team Arrow's solution focuses on the health sector.
 A basic tenet of economics is that resources are limited whilst human needs are basically infinite. In a country like Nigeria, this holds especially true. In the business of health, the consequences of these limted resources often prove fatal.
