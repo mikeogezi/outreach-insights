@@ -24,21 +24,21 @@ The server will start running on port 3000, Go to your browser and visit http://
 ## Screenshots
 * *A list of the closest health facilities to the settlements and a few details about them*
 ![](./assets/gallery-1.jpg)
-
+---
 * *Insights about the settlement in question; including what's been done well in the community as well as where improvements can be made*
 ![](./assets/gallery-2.jpg)
-
+---
 * *Home screen*
 ![](./assets/gallery-3.jpg)
-
+---
 * *Choosing the location to be queried*
 ![](./assets/gallery-4.jpg)
-
+---
 * *After choosing a State, LGA and Settlement a query can be made*
 ![](./assets/gallery-5.jpg)
-
+---
 * *The queried settlement Gidan Zari has been located and is highlighted*
 ![](./assets/gallery-6.jpg)
-
+---
 * *A list of the neighbouring settlements*
 ![](./assets/gallery-7.jpg)
