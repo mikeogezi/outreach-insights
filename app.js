@@ -3,31 +3,14 @@
 let path = require('path')
 
 let express = require('express')
-let stylus = require('stylus')
-let nib = require('nib')
 let bodyParser = require('body-parser')
 let favicon = require('serve-favicon')
-let multer = require('multer')
 let ms = require('ms')
 
 let routes = require('./app/routes')
 let views = require('./app/views')
 
-let maxSize = 10485760
 let app = express()
-let storage = multer.memoryStorage()
-let limits = {
-    fileSize: maxSize
-}
-let multerOpts = {
-    storage: storage,
-    limits: limits
-}
-let upload = multer(multerOpts)
-
-let compile = (str, _path) => {
-    return stylus(str).set('filename', _path).use(nib());
-}
 
 app.set('homedir', __dirname)
 app.set('port', process.env.PORT || 3000)
@@ -52,11 +35,6 @@ app.set('twitter share', 'https://twitter.com/home?status=')
 
 app.use(express.static(path.join(__dirname + '/public')))
 app.use(bodyParser.json())
-// app.use(favicon(path.join(__dirname, '/public/images/logo.ico')))
-app.use(stylus.middleware({
-    src: path.join(__dirname, '/public'),
-    compile: compile
-}))
 app.use(bodyParser.urlencoded({
     extended: false
 }))
