@@ -28,7 +28,7 @@ The server will start running on port 3000, Go to your browser and visit http://
 * *Insights about the settlement in question; including what's been done well in the community as well as where improvements can be made*
 ![](./assets/gallery-2.jpg)
 ---
-* *Insights about the settlement in question; including what's been done well in the community as well as where improvements can be made*
+* *The home screen of the application*
 ![](./assets/gallery-2.jpg)
 ---
 * *Choosing the location to be queried*
