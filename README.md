@@ -1,6 +1,6 @@
 # [Outreach Insights](https://devpost.com/software/teamarrow) by Team Arrow for [KadHack 2018](http://colab.com.ng/2018/11/09/win-n1000000-kadhack2018-ehealth-colab-grid3/)
 
-*This solution [won](https://twitter.com/eHealth_africa/status/1072145371789430784) the KadHack 2018 online hackathon*
+*[This solution won the KadHack 2018 online hackathon](https://twitter.com/eHealth_africa/status/1072145371789430784)*
 
 ## Synopsis
 Team Arrow's solution focuses on the health sector.
@@ -24,17 +24,17 @@ npm start
 The server will start running on port 3000, Go to your browser and visit http://localhost:3000
 
 ## Screenshots
-* *After choosing a State, LGA and Settlement a query can be made*
++ *After choosing a State, LGA and Settlement a query can be made*
 ![](./assets/gallery-5.jpg)
 ---
-* *The queried settlement Gidan Zari has been located and is highlighted*
++ *The queried settlement Gidan Zari has been located and is highlighted*
 ![](./assets/gallery-6.jpg)
 ---
-* *A list of the closest health facilities to the settlements and a few details about them*
++ *A list of the closest health facilities to the settlements and a few details about them*
 ![](./assets/gallery-1.jpg)
 ---
-* *Insights about the settlement in question; including what's been done well in the community as well as where improvements can be made*
++ *Insights about the settlement in question; including what's been done well in the community as well as where improvements can be made*
 ![](./assets/gallery-2.jpg)
 ---
-* *A list of the neighbouring settlements*
++ *A list of the neighbouring settlements*
 ![](./assets/gallery-7.jpg)
